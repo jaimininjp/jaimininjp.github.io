@@ -175,11 +175,11 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-8 font-medium">
-                    <a href="index.html" class="nav-link active text-gray-700 hover:text-[#4C51BF]">Home</a>
-                    <a href="services.html" class="nav-link text-gray-700 hover:text-[#4C51BF]">Services</a>
-                    <a href="projects.html" class="nav-link text-gray-700 hover:text-[#4C51BF]">Projects</a>
+                    <a href="#home" class="nav-link active text-gray-700 hover:text-[#4C51BF] nav-trigger" data-page="home">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-[#4C51BF] nav-trigger" data-page="services">Services</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-[#4C51BF] nav-trigger" data-page="projects">Projects</a>
                     <!-- <a href="gallery.html" class="nav-link text-gray-700 hover:text-[#4C51BF]">Gallery</a> -->
-                    <a href="contact.html" class="nav-link text-gray-700 hover:text-[#4C51BF]">Contact</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-[#4C51BF] nav-trigger" data-page="contact">Contact</a>
                     <a href="https://wa.me/919016702045" target="_blank" class="btn-primary-gradient text-white font-bold py-2 px-5 rounded-full transition duration-300 flex items-center space-x-2 shadow-md">
                         <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp Us</span>
@@ -198,11 +198,11 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-800/80 backdrop-blur-xl">
-            <a href="index.html" class="block py-3 px-6 text-sm nav-link">Home</a>
-            <a href="services.html" class="block py-3 px-6 text-sm nav-link">Services</a>
-            <a href="projects.html" class="block py-3 px-6 text-sm nav-link">Projects</a>
+            <a href="#home" class="block py-3 px-6 text-sm nav-link nav-trigger" data-page="home">Home</a>
+            <a href="#services" class="block py-3 px-6 text-sm nav-link nav-trigger" data-page="services">Services</a>
+            <a href="#projects" class="block py-3 px-6 text-sm nav-link nav-trigger" data-page="projects">Projects</a>
             <!-- <a href="gallery.html" class="block py-3 px-6 text-sm nav-link">Gallery</a> -->
-            <a href="contact.html" class="block py-3 px-6 text-sm nav-link">Contact</a>
+            <a href="#contact" class="block py-3 px-6 text-sm nav-link nav-trigger" data-page="contact">Contact</a>
             <a href="https://wa.me/919016702045" target="_blank" class="block py-3 px-6 text-sm text-white font-semibold bg-[#4C51BF] rounded-full hover:bg-blue-700 transition duration-300">WhatsApp Us</a>
         </div>
     </header>
@@ -211,18 +211,18 @@
         <!-- Home Page -->
         <div id="home" class="page active">
             <!-- Hero Section -->
-            <section class="hero-section text-center scroll-reveal">
+            <section class="hero-section text-center">
                 <div class="hero-overlay py-32 md:py-48">
                     <div class="container mx-auto px-6 md:px-12">
                         <h1 class="font-serif-display text-4xl md:text-6xl font-bold text-white mb-4">Crafting Excellence in Glass</h1>
                         <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-8">With over 20 years of experience, we transform spaces with bespoke glass solutions, blending precision, quality, and modern design.</p>
-                        <a href="#contact" class="btn-primary-gradient text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 nav-trigger shadow-lg" data-page="contact">Get a Free Quote</a>
+                        <a href="#contact" class="btn-primary-gradient text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 nav-trigger" data-page="contact">Get a Free Quote</a>
                     </div>
                 </div>
             </section>
 
             <!-- About Us Section -->
-            <section class="py-20 scroll-reveal container mx-auto px-6 md:px-12">
+            <section class="container mx-auto px-6 md:px-12">
                  <div class="md:flex items-center gap-12 bg-blue-50 p-8 rounded-3xl shadow-xl">
                     <img src="imgs/about-bg.jpg" alt="Our Team at Shree Vahanvati Corporation" class="w-full md:w-1/3 h-auto rounded-lg mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x400/BFEEFF/4C51BF?text=20+Years';">
                     <div class="mt-6 md:mt-0">
@@ -233,7 +233,7 @@
             </section>
 
             <!-- Services Overview -->
-            <section class="py-20 bg-slate-50 scroll-reveal">
+            <section class="py-20 bg-slate-50">
                 <div class="container mx-auto px-6 md:px-12">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl font-bold text-gray-800">Our Core Services</h2>
@@ -273,7 +273,7 @@
             </section>
             
             <!-- Why Choose Us & How We Work -->
-            <section class="py-20 scroll-reveal container mx-auto px-6 md:px-12">
+            <section class="container mx-auto px-6 md:px-12">
                 <div class="grid md:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 class="text-3xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
@@ -331,7 +331,7 @@
             </section>
 
             <!-- Featured Projects -->
-            <section class="py-20 bg-white scroll-reveal">
+            <section class="py-20 bg-white">
                 <div class="container mx-auto px-6 md:px-12">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl font-bold text-gray-800">Our Signature Work</h2>
@@ -359,11 +359,213 @@
                                 <p class="text-gray-600 mt-2">Installation of large-scale, high-clarity mirrors.</p>
                             </div>
                         </div>
+                        <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                            <img src="imgs/Projects/salons.jpg" alt="Luxury Salon Interior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/F0F4C3/4C51BF?text=Salons';">
+                            <div class="p-6">
+                                <h3 class="font-semibold text-xl text-gray-700">Salons in Ahmedabad One Mall</h3>
+                                <p class="text-gray-600 mt-2">Bespoke mirrors and decorative glass for luxury salons.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                            <img src="imgs/Projects/residental.jpg" alt="Modern House Exterior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E1F5FE/4C51BF?text=Residential';">
+                            <div class="p-6">
+                                <h3 class="font-semibold text-xl text-gray-700">Various Residential Projects</h3>
+                                <p class="text-gray-600 mt-2">Custom shower cubicles, railings, and partitions.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                            <img src="imgs/Projects/corporate-office.jpg" alt="Corporate Office Interior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/EDE7F6/4C51BF?text=Offices';">
+                            <div class="p-6">
+                                <h3 class="font-semibold text-xl text-gray-700">Corporate Offices</h3>
+                                <p class="text-gray-600 mt-2">Modern glass partitions and back-painted glass walls.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
+        <!-- Services Page -->
+        <div id="services" class="page">
+            <section class="container mx-auto px-6 md:px-12 py-16">
+                <div class="text-center">
+                    <h1 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-800">Our Comprehensive Services</h1>
+                    <p class="text-gray-600 mt-4">From Concept to Installation, We Cover It All.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Items -->
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/Tempered-Glass.jpg" alt="Toughened Glass" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Toughened Glass</h3>
+                            <p class="text-gray-600 text-sm">Also known as tempered glass, it is 4-5 times stronger than regular glass. Ideal for doors, partitions, and tabletops.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/Laminated-Glass.png" alt="Laminated Glass" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Laminated Glass</h3>
+                            <p class="text-gray-600 text-sm">A safety glass that holds together when shattered. Perfect for storefronts, balconies, and skylights.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/insulated-glass.jpg" alt="Insulated Glass" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Insulated Glass</h3>
+                            <p class="text-gray-600 text-sm">Double or triple glazed units that provide excellent thermal and sound insulation, improving energy efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/Glass-Facades.png" alt="Glass Facades" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Glass Facades</h3>
+                            <p class="text-gray-600 text-sm">Modern and sophisticated exterior glass systems for commercial and residential buildings.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/shower.jpg" alt="Shower Cubicles" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Shower Cubicles</h3>
+                            <p class="text-gray-600 text-sm">Custom-designed shower enclosures that add a touch of luxury and functionality to any bathroom.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/glass-railing.jpg" alt="Glass Railings" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Glass Railings</h3>
+                            <p class="text-gray-600 text-sm">Sleek and safe railing systems for stairs, balconies, and pools, offering unobstructed views.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/custom-mirror.jpg" alt="Custom Mirrors" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Custom Mirrors</h3>
+                            <p class="text-gray-600 text-sm">Made-to-measure mirrors in various shapes and sizes to enhance the aesthetics of your space.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/glass-partition.jpg" alt="Glass Partitions" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Glass Partitions</h3>
+                            <p class="text-gray-600 text-sm">Create open and bright interiors for offices and homes with stylish glass partition walls.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center overflow-hidden group">
+                        <img src="imgs/OurCoreService/back-painted.jpg" alt="Back-Painted Glass" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl mb-2 text-gray-700">Back-Painted Glass</h3>
+                            <p class="text-gray-600 text-sm">Vibrant and durable colored glass for kitchen backsplashes, wall panels, and furniture.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <section>
+                <div class="text-center">
+                    <h1 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-800">Our Portfolio</h1>
+                    <p class="text-gray-600 mt-4">Showcasing Our Craftsmanship Across Various Sectors</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Items -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/Asopalav-Vadaj.png" alt="Asopalav Vadaj Glass Project" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CFE8FF/4C51BF?text=Asopalav+Vadaj';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">Asopalav, Vadaj</h3>
+                            <p class="text-gray-600 mt-2">Complete facade and interior glasswork.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/Akshar-Cruise.jpg" alt="Akshar Cruise Glass Installation" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/D4F1F4/4C51BF?text=Akshar+Cruise';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">Akshar Cruise, Ahmedabad</h3>
+                            <p class="text-gray-600 mt-2">Custom safety glass for a unique marine environment.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/b-star-gym.jpg" alt="B-Star Gym Mirror Installation" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E8F5E9/4C51BF?text=B-Star+Gym';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">B-Star Gym, Ahmedabad</h3>
+                            <p class="text-gray-600 mt-2">Installation of large-scale, high-clarity mirrors.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/salons.jpg" alt="Luxury Salon Interior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/F0F4C3/4C51BF?text=Salons';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">Salons in Ahmedabad One Mall</h3>
+                            <p class="text-gray-600 mt-2">Bespoke mirrors and decorative glass for luxury salons.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/residental.jpg" alt="Modern House Exterior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E1F5FE/4C51BF?text=Residential';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">Various Residential Projects</h3>
+                            <p class="text-gray-600 mt-2">Custom shower cubicles, railings, and partitions.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden group">
+                        <img src="imgs/Projects/corporate-office.jpg" alt="Corporate Office Interior" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null;this.src='https://placehold.co/600x400/EDE7F6/4C51BF?text=Offices';">
+                        <div class="p-6">
+                            <h3 class="font-semibold text-xl text-gray-700">Corporate Offices</h3>
+                            <p class="text-gray-600 mt-2">Modern glass partitions and back-painted glass walls.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section>
+                <div class="text-center">
+                    <h1 class="font-serif-display text-4xl md:text-5xl font-bold text-gray-800">Get in Touch</h1>
+                    <p class="text-gray-600 mt-4">Let's discuss how we can bring your vision to life.</p>
+                </div>
+                <div class="mt-12 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 bg-white p-8 md:p-12 rounded-3xl shadow-lg">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                        <div class="space-y-4 text-gray-700">
+                            <p><strong>Phone:</strong> <a href="tel:+919016702045" class="text-blue-600 hover:text-blue-800">9016702045</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:contact@svcglass.com" class="text-blue-600 hover:text-blue-800">contact@svcglass.com</a> (dummy)</p>
+                            <p><strong>Address:</strong> 123 Glassworks Lane, GIDC, Ahmedabad, Gujarat 380001 (dummy)</p>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="hover:text-[var(--color-primary-light)]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+                                <a href="#" class="hover:text-[var(--color-primary-light)]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919 4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded-lg bg-blue-50 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="w-full px-4 py-3 rounded-lg bg-blue-50 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Your Email" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="sr-only">Phone</label>
+                                <input type="tel" name="phone" id="phone" class="w-full px-4 py-3 rounded-lg bg-blue-50 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Your Phone Number">
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-blue-50 border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-[#4C51BF] text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Send Inquiry via WhatsApp</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -377,19 +579,19 @@
                 <div>
                     <h3 class="font-bold text-lg mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-[#6A78EA]">Home</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-[#6A78EA]">Services</a></li>
-                        <li><a href="projects.html" class="text-gray-400 hover:text-[#6A78EA]">Projects</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-[#6A78EA]">Contact Us</a></li>
+                        <li><a href="#home" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="home">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="services">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="projects">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="font-bold text-lg mb-4">Our Services</h3>
                     <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover:text-[#6A78EA]">Toughened Glass</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-[#6A78EA]">Laminated Glass</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-[#6A78EA]">Glass Facades</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-[#6A78EA]">Custom Mirrors</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="services">Toughened Glass</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="services">Laminated Glass</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="services">Glass Facades</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#6A78EA] nav-trigger" data-page="services">Custom Mirrors</a></li>
                     </ul>
                 </div>
                 <div>
@@ -420,11 +622,14 @@
             const mobileMenu = document.getElementById('mobile-menu');
 
             function showPage(pageId) {
+                console.log('Attempting to show page:', pageId);
                 pages.forEach(page => page.classList.remove('active'));
                 const targetPage = document.getElementById(pageId);
                 if(targetPage) {
+                    console.log('Target page found:', targetPage);
                     targetPage.classList.add('active');
                 } else {
+                    console.error('Target page not found for ID:', pageId);
                     document.getElementById('home').classList.add('active'); // Fallback to home
                 }
                 
@@ -434,6 +639,14 @@
                 });
                 mobileMenu.classList.add('hidden');
                 window.scrollTo(0, 0);
+            }
+
+            // Handle initial page load based on URL hash (if any)
+            const initialPageId = window.location.hash.substring(1);
+            if (initialPageId) {
+                showPage(initialPageId);
+            } else {
+                showPage('home'); // Default to home page
             }
 
             navTriggers.forEach(trigger => {
@@ -446,15 +659,6 @@
 
             mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-            // --- Scroll Reveal Animation ---
-            const revealElements = document.querySelectorAll('.scroll-reveal');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) entry.target.classList.add('visible');
-                });
-            }, { threshold: 0.1 });
-            revealElements.forEach(el => observer.observe(el));
-            
             // --- Contact Form to WhatsApp ---
             const contactForm = document.getElementById('contact-form');
             contactForm.addEventListener('submit', function(e) {
